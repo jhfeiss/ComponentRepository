@@ -1,0 +1,50 @@
+.ui-theme-toggle {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ui-toggle-track {
+    width: 52px;
+    height: 28px;
+    background: var(--ui-muted);
+    border-radius: 999px;
+    position: relative;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.ui-theme-toggle .ui-toggle-track {
+    background: var(--ui-muted-button);
+}
+
+.ui-toggle-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: var(--circular-radius);
+    background: var(--ui-primary);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* sliding motion */
+.ui-theme-toggle.dark .ui-toggle-thumb {
+    transform: translateX(0);
+}
+
+.ui-theme-toggle.light .ui-toggle-thumb {
+    transform: translateX(24px);
+}
+
+/* subtle hover polish */
+.ui-theme-toggle:hover .ui-toggle-track {
+    filter: brightness(1.1);
+}

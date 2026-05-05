@@ -1,0 +1,71 @@
+.ui-topbar {
+    display: flex;
+    align-items: center;
+
+    height: 52px;
+    padding: 0 14px;
+
+    background: var(--ui-bg);
+    border-bottom: 1px solid var(--ui-muted);
+    font-family: var(--ui-font);
+    gap: 16px;
+}
+
+button,
+.ui-topbar-item,
+.ui-popover-trigger,
+input {
+    -webkit-app-region: no-drag;
+}
+
+.ui-topbar-drag-area {
+    -webkit-app-region: drag;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* LEFT */
+.ui-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CENTER (NOW JUST FLEX NEXT TO LEFT) */
+.ui-topbar-center {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 12px;
+    /* small separation from left */
+}
+
+/* RIGHT PUSHED TO END */
+.ui-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* NAV ITEMS */
+.ui-topbar-item {
+    font-size: 13px;
+    color: var(--ui-text);
+    opacity: 0.7;
+
+    cursor: pointer;
+    user-select: none;
+
+    transition: opacity var(--ui-speed-super-fast) ease;
+}
+
+.ui-topbar-item:hover {
+    opacity: 1;
+}
+
+.ui-topbar-item.active {
+    opacity: 1;
+    color: var(--ui-primary);
+}

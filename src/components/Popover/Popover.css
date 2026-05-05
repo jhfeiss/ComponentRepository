@@ -1,0 +1,71 @@
+.ui-popover {
+    position: relative;
+    display: inline-block;
+}
+
+/* trigger (gear icon, button, etc.) */
+.ui-popover-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform var(--ui-speed-super-fast) ease;
+}
+
+.ui-popover-trigger.open {
+    transform: rotate(90deg);
+}
+
+/* floating panel */
+.ui-popover-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    min-width: 180px;
+
+    background: var(--ui-bg);
+    border: 1px solid var(--ui-muted);
+    border-radius: var(--border-radius);
+
+
+    padding: 6px;
+
+    z-index: 999;
+}
+
+/* items */
+.ui-popover-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 10px;
+
+    border: none;
+    background: transparent;
+
+    color: var(--ui-text);
+    font-family: var(--ui-font);
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: background var(--ui-speed-super-fast) ease;
+}
+
+.ui-popover-item:hover {
+    background: var(--ui-muted-button);
+}
+
+.ui-popover-item.danger {
+    color: var(--error-color);
+}
+
+.ui-popover-icon {
+    display: flex;
+    align-items: center;
+}

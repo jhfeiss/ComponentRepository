@@ -1,0 +1,72 @@
+.ui-button {
+    font-family: var(--ui-font);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* =======================
+   VARIANTS
+======================= */
+
+.ui-button.primary {
+    background: var(--ui-primary);
+    color: white;
+}
+
+.ui-button.primary:hover {
+    filter: brightness(1.1);
+}
+
+.ui-button.secondary {
+    background: transparent;
+    border: 1px solid var(--ui-muted);
+    color: var(--ui-text);
+}
+
+.ui-button.secondary:hover {
+    background: var(--ui-muted-button);
+}
+
+.ui-button.ghost {
+    background: transparent;
+    color: var(--ui-text);
+}
+
+.ui-button.ghost:hover {
+    background: var(--ui-muted-button);
+}
+
+/* =======================
+   SIZES
+======================= */
+
+.ui-button.sm {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.ui-button.md {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+.ui-button.lg {
+    padding: 12px 18px;
+    font-size: 16px;
+}
+
+/* =======================
+   STATES
+======================= */
+
+.ui-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

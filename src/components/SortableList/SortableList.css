@@ -1,0 +1,40 @@
+.ui-sortable-list {
+    display: flex;
+    flex-direction: column;
+    -webkit-app-region: no-drag;
+
+}
+
+.ui-sortable-item {
+    touch-action: none;
+    cursor: grab;
+}
+
+.ui-sortable-item:active {
+    cursor: grabbing;
+}
+
+.ui-sortable-list-header {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 12px;
+
+    border-bottom: 1px solid var(--ui-muted);
+
+    font-size: 12px;
+    font-weight: 600;
+
+    position: sticky;
+    top: 0;
+
+    background: var(--ui-bg);
+
+    z-index: 2;
+}
+
+.ui-sortable-list-header-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

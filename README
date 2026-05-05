@@ -1,0 +1,2 @@
+run the following to watch
+npx tsup src/index.ts --watch
