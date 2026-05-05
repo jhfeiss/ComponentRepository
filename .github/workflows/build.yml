@@ -25,9 +25,11 @@ jobs:
       # =========================
       # BUILD UI LIBRARY
       # =========================
+      - name: Install dependencies
+        run: npm install
+
       - name: Build UI Library
-        working-directory: packages/ui
-        run: npm install && npm run build
+        run: npm run build
 
       # =========================
       # PUBLISH TO NPM
