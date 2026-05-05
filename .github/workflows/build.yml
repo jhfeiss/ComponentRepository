@@ -32,7 +32,6 @@ jobs:
       # PUBLISH TO NPM
       # =========================
       - name: Publish package
-        working-directory: packages/ui
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
