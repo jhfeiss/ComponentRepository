@@ -25,9 +25,6 @@ jobs:
       # =========================
       # BUILD UI LIBRARY
       # =========================
-      - name: Install dependencies
-        run: npm install
-
       - name: Build UI Library
         run: npm run build
 
