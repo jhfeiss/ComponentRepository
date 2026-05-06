@@ -9,3 +9,5 @@ export * from "./components/TopBar";
 export * from "./utils/setPrimaryColor";
 export * from "./components/RowItem";
 export * from "./components/SortableList";
+export * from "./utils/collegeTeamUtils";
+export * from "./utils/getPosition";

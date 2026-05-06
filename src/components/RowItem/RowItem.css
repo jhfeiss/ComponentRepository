@@ -1,3 +1,11 @@
+.ui-sortable-list-header,
+.ui-row-item-columns {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
 .ui-row-item {
     display: flex;
     align-items: center;
