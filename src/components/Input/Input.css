@@ -76,6 +76,13 @@
     margin-left: 6px;
 }
 
+.ui-input::-webkit-outer-spin-button,
+.ui-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 /* =======================
    ERROR STATE
 ======================= */

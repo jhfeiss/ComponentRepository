@@ -1,3 +1,4 @@
+import { clamp } from "../../utils/clamp";
 import "./Input.css";
 
 type InputProps = {
@@ -7,10 +8,15 @@ type InputProps = {
 	label?: string;
 	error?: string;
 	disabled?: boolean;
-	onChange?: (value: string) => void;
+	onChange?: (value: string | number) => void;
 
 	leftIcon?: React.ReactNode;
 	rightIcon?: React.ReactNode;
+
+	type?: "text" | "number";
+
+	minValue?: number;
+	maxValue?: number;
 };
 
 export const Input = ({
@@ -23,6 +29,9 @@ export const Input = ({
 	onChange,
 	leftIcon,
 	rightIcon,
+	type,
+	minValue = 0,
+	maxValue = 99,
 }: InputProps) => {
 	return (
 		<div className="ui-input-wrapper">
@@ -31,12 +40,20 @@ export const Input = ({
 			<div className={`ui-input-container ${error ? "error" : ""}`}>
 				{leftIcon && <div className="ui-input-icon left">{leftIcon}</div>}
 				<input
+					type={type}
+					min={type === "number" ? minValue : undefined}
+					max={type === "number" ? maxValue : undefined}
 					className="ui-input"
 					value={value}
 					defaultValue={defaultValue}
 					placeholder={placeholder}
 					disabled={disabled}
-					onChange={(e) => onChange?.(e.target.value)}
+					onChange={(e) => {
+						const val = e.target.value;
+						onChange?.(
+							type === "number" ? clamp(Number(val), minValue, maxValue) : val,
+						);
+					}}
 				/>
 				{rightIcon && <div className="ui-input-icon right">{rightIcon}</div>}
 			</div>
