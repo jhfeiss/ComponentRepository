@@ -1,4 +1,6 @@
+import { useEffect, useRef } from "react";
 import { clamp } from "../../utils/clamp";
+import { IoCaretUp, IoCaretDown } from "react-icons/io5";
 import "./Input.css";
 
 type InputProps = {
@@ -33,6 +35,43 @@ export const Input = ({
 	minValue = 0,
 	maxValue = 99,
 }: InputProps) => {
+	const timeoutRef = useRef<number | null>(null);
+	const valueRef = useRef(Number(value ?? 0));
+	useEffect(() => {
+		valueRef.current = Number(value ?? 0);
+	}, [value]);
+
+	const stopStepping = () => {
+		if (timeoutRef.current) {
+			clearTimeout(timeoutRef.current);
+			timeoutRef.current = null;
+		}
+	};
+
+	const stepValue = (direction: number) => {
+		const next = clamp(valueRef.current + direction, minValue, maxValue);
+
+		valueRef.current = next;
+
+		onChange?.(next);
+	};
+
+	const startStepping = (direction: number) => {
+		stopStepping();
+
+		const tick = () => {
+			stepValue(direction);
+
+			timeoutRef.current = window.setTimeout(tick, 60);
+		};
+
+		tick();
+	};
+
+	useEffect(() => {
+		return () => stopStepping();
+	}, []);
+
 	return (
 		<div className="ui-input-wrapper">
 			{label && <label className="ui-input-label">{label}</label>}
@@ -55,6 +94,26 @@ export const Input = ({
 						);
 					}}
 				/>
+				{type === "number" && (
+					<div className="ui-input-stepper">
+						<div
+							className="ui-input-stepper-button"
+							onPointerDown={() => startStepping(1)}
+							onPointerUp={stopStepping}
+							onPointerLeave={stopStepping}
+						>
+							<IoCaretUp />
+						</div>
+						<div
+							className="ui-input-stepper-button"
+							onPointerDown={() => startStepping(-1)}
+							onPointerUp={stopStepping}
+							onPointerLeave={stopStepping}
+						>
+							<IoCaretDown />
+						</div>
+					</div>
+				)}
 				{rightIcon && <div className="ui-input-icon right">{rightIcon}</div>}
 			</div>
 

@@ -101,3 +101,41 @@
 .ui-input-container.error:focus-within {
     box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
 }
+
+/* =======================
+   INPUT STEPPER
+======================= */
+.ui-input-stepper {
+    right: 6px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ui-input-stepper-button {
+    width: 16px;
+    height: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+
+    color: var(--ui-muted);
+
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+}
+
+.ui-input-stepper-button:hover {
+    background: var(--ui-muted-button);
+    color: var(--ui-primary);
+}
+
+.ui-input-stepper-button:active {
+    transform: scale(0.95);
+}
