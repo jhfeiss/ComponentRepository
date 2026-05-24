@@ -9,6 +9,10 @@
     border-bottom: 1px solid var(--ui-muted);
     font-family: var(--ui-font);
     gap: 16px;
+
+    z-index: 1000;
+    position: relative;
+    -webkit-app-region: drag;
 }
 
 button,
@@ -23,6 +27,7 @@ input {
     height: 100%;
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
 /* LEFT */
@@ -30,6 +35,11 @@ input {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.ui-topbar-left img {
+    height: 24px;
+    width: 24px;
 }
 
 /* CENTER (NOW JUST FLEX NEXT TO LEFT) */

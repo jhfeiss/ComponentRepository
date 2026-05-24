@@ -1,3 +1,5 @@
+import { PlayerVisuals } from "./PlayerVisuals";
+
 export interface MaddenPlayer {
 	firstName: string;
 	lastName: string;
@@ -112,5 +114,5 @@ export interface MaddenPlayer {
 	unk8: number;
 	unkByte2: number;
 	visMoveType: number;
-	visuals: object;
+	visuals: PlayerVisuals;
 }

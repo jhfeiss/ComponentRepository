@@ -12,7 +12,7 @@
 // If you use this function, you HAVE to include ovrweights/ovrweightsPosMap in your included files when compiling to an exe
 
 import ovrWeights from "../data/ovrWeights.json";
-import ovrWeightsPosMap from "../data/ovrweightsPosMap.json";
+import ovrWeightsPosMap from "../data/ovrWeightsPosMap.json";
 import { MaddenPlayer } from "../domain";
 import { getPosition } from "./getPosition";
 import { formatArchetype } from "./textFormatting";

@@ -72,6 +72,10 @@ export const Input = ({
 		return () => stopStepping();
 	}, []);
 
+	const numericValue = Number(value ?? 0);
+	const isMax = numericValue >= maxValue;
+	const isMin = numericValue <= minValue;
+
 	return (
 		<div className="ui-input-wrapper">
 			{label && <label className="ui-input-label">{label}</label>}
@@ -97,7 +101,7 @@ export const Input = ({
 				{type === "number" && (
 					<div className="ui-input-stepper">
 						<div
-							className="ui-input-stepper-button"
+							className={`ui-input-stepper-button ${isMax ? "disabled" : ""}`}
 							onPointerDown={() => startStepping(1)}
 							onPointerUp={stopStepping}
 							onPointerLeave={stopStepping}
@@ -105,7 +109,7 @@ export const Input = ({
 							<IoCaretUp />
 						</div>
 						<div
-							className="ui-input-stepper-button"
+							className={`ui-input-stepper-button ${isMin ? "disabled" : ""}`}
 							onPointerDown={() => startStepping(-1)}
 							onPointerUp={stopStepping}
 							onPointerLeave={stopStepping}

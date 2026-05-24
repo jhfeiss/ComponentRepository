@@ -16,3 +16,7 @@ export * from "./domain";
 export * from "./utils/getDevTrait";
 export * from "./utils/textFormatting";
 export * from "./utils/createBestOverall";
+export * from "./utils/getHeightFromInches";
+export * from "./data";
+export * from "./utils/getGearItems";
+export * from "./components/ImageDropdown";

@@ -12,6 +12,8 @@ const folderNames = {
 	NflLogos: "v1778449814",
 	MaddenPoraits: "v1778451475",
 	DevTraits: "v1778541757",
+	AppLogos: "v1779560764",
+	CharacterVisuals: "v1779574244",
 } as const;
 
 type CloudinaryImageProps = {

@@ -139,3 +139,9 @@
 .ui-input-stepper-button:active {
     transform: scale(0.95);
 }
+
+.ui-input-stepper-button.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}

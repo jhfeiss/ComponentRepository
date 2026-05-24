@@ -1,7 +1,8 @@
 .ui-sortable-list {
     display: flex;
     flex-direction: column;
-    -webkit-app-region: no-drag;
+    z-index: 0;
+    position: relative;
 }
 
 .ui-sortable-item {
