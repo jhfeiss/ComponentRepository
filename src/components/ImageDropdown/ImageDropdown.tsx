@@ -49,28 +49,28 @@ export const ImageDropdown = ({
 		<div className="ui-input-wrapper">
 			{label && <label className="ui-input-label">{label}</label>}
 			<div
-				className="ui-dropdown"
+				className="ui-image-dropdown"
 				ref={rootRef}
 			>
 				{/* trigger */}
 				<div
-					className="ui-dropdown-trigger"
+					className="ui-image-dropdown-trigger"
 					onClick={() => setOpen((p) => !p)}
 				>
 					<CloudinaryImage
 						folderName="CharacterVisuals"
 						fileName={imageName}
-						className="ui-dropdown-image"
+						className="ui-image-dropdown-image"
 					/>
 
 					<span>{selected?.key ?? placeholder}</span>
 
-					<span className="ui-dropdown-arrow">▾</span>
+					<span className="ui-image-dropdown-arrow">▾</span>
 				</div>
 
 				{/* menu */}
 				{open && (
-					<div className="ui-dropdown-menu">
+					<div className="ui-image-dropdown-menu">
 						{options.map((opt) => {
 							let itemImageName = opt.image
 								? opt.image.replace("HelmetFlag_", "")
@@ -85,7 +85,7 @@ export const ImageDropdown = ({
 							return (
 								<div
 									key={opt.value}
-									className={`ui-dropdown-item ${
+									className={`ui-image-dropdown-item ${
 										opt.value === value ? "active" : ""
 									}`}
 									onClick={() => {
@@ -97,7 +97,7 @@ export const ImageDropdown = ({
 										<CloudinaryImage
 											folderName="CharacterVisuals"
 											fileName={itemImageName}
-											className="ui-dropdown-image"
+											className="ui-image-dropdown-image"
 										/>
 									)}
 									<span>{opt.key}</span>

@@ -21,3 +21,5 @@ export * from "./data";
 export * from "./utils/getGearItems";
 export * from "./components/ImageDropdown";
 export * from "./components/Toggle";
+export * from "./components/Dropdown";
+export * from "./components/SplitPlane";
