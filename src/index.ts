@@ -20,3 +20,4 @@ export * from "./utils/getHeightFromInches";
 export * from "./data";
 export * from "./utils/getGearItems";
 export * from "./components/ImageDropdown";
+export * from "./components/Toggle";

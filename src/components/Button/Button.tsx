@@ -2,7 +2,7 @@ import "./Button.css";
 
 type ButtonProps = {
 	children: React.ReactNode;
-	variant?: "primary" | "secondary" | "ghost";
+	variant?: "primary" | "secondary" | "ghost" | "danger";
 	size?: "sm" | "md" | "lg";
 	disabled?: boolean;
 	onClick?: () => void;

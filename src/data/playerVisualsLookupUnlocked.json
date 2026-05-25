@@ -106,7 +106,7 @@
 		"Large": "Large_Pads",
 		"XL": "XLarge_Pads",
 		"Rib Combo": "RibCombo_Pads",
-		"Rib Guard": "RibGaurd_Pads",
+		"Rib Garud": "RibGaurd_Pads",
 		"Vicis": "Vicis_Pads"
 	},
 	"Neckpad": {
@@ -122,7 +122,11 @@
 		"Pacifier White": "GearMouthpiece_PacifierDual_White",
 		"Pacifier Black": "GearMouthpiece_PacifierDual_Black",
 		"Pacifier Team Color": "GearMouthpiece_PacifierDual_TeamColor",
-		"Pacifier Secondary Color": "GearMouthpiece_PacifierDual_SecondaryColor"
+		"Pacifier Secondary Color": "GearMouthpiece_PacifierDual_SecondaryColor",
+		"Mouthguard White": "MouthguardWhite",
+		"Mouthguard Black": "GearMouthpiece_Mouthguard1_Black",
+		"Mouthguard Team Color": "GearMouthpiece_Mouthguard1_TeamColor",
+		"Mouthguard Secondary Color": "GearMouthpiece_Mouthguard1_SecondaryColor"
 	},
 	"OuterShirt": {
 		"None": "Gear_JerseyStyle_SleeveTight",
@@ -135,6 +139,9 @@
 		"None": "Undershirt_None",
 		"Regular": "",
 		"Untucked": "Undershirt_Untucked",
+		"Sleevleless Hoodie White": "G_HoodieSleeveless_COLTS_ML_WHI",
+		"Sleevleless Hoodie Black": "G_HoodieSleeveless_Bengals_ML_MCBLA",
+		"Sleevleless Hoodie Secondary": "G_HoodieSleeveless_Secondary",
 		"Short Sleeve White": "v_NNC_2024_CompressionShirt_short_away",
 		"Short Sleeve Black": "G_CompressionT_Crew_ShortSleeve_LLJ_BLA",
 		"Short Sleeve Secondary": "G_CompressionT_Crew_ShortSleeve_Secondary",
@@ -179,7 +186,10 @@
 		"Oakley Clear": "GearVisor_visorOakley_clear",
 		"Oakley Prizm": "GearVisor_visorOakley_Prizm",
 		"Oakley Smoke": "GearVisor_visorOakley_DarkLight",
-		"Oakley Dark": "GearVisor_visorOakley_Dark"
+		"Oakley Dark": "GearVisor_visorOakley_Dark",
+		"Vanity Gold": "2023_v_UKO_Visor_BLU",
+		"Iridescent": "v_ZBZ_49ers_away_Visor",
+		"Burnt Orange": "v_ABL_Visor"
 	},
 	"InnerSocks": {
 		"None": "Socks_None",
@@ -228,7 +238,13 @@
 		"Riddell TK": "GearHelmet_RiddellTK",
 		"Standard Brady": "GearHelmet_standardBrady",
 		"Standard": "GearHelmet_Standard",
-		"Light Gladiator": "GearHelmet_LightGladiator"
+
+		"Light Gladiator": "GearHelmet_LightGladiator",
+		"Snowman Interceptor": "GearHelmet_SnowmanInterceptor",
+		"Snowman Evader": "GearHelmet_SnowmanEvader",
+		"Snowman FrontLine": "GearHelmet_SnowmanFrontLine",
+		"Pumpkin Defender": "GearHelmet_PumpkinDefender",
+		"Pumpkin Invader": "GearHelmet_PumpkinInvader"
 	},
 	"LeftWristWear": {
 		"None": "GearWrist_None",

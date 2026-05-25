@@ -43,6 +43,19 @@
     background: var(--ui-muted-button);
 }
 
+.ui-button.danger {
+    background: var(--error-color);
+    color: white;
+}
+
+.ui-button.danger:hover {
+    filter: brightness(1.1);
+}
+
+.ui-button.secondary:hover {
+    background: var(--ui-muted-button);
+}
+
 /* =======================
    SIZES
 ======================= */

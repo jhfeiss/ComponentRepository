@@ -9,10 +9,11 @@
     gap: 8px;
 
     padding: 8px 10px;
-    border: 1px solid #333;
-    background: #111;
-    color: white;
+    border: 1px solid var(--ui-muted);
+    background: var(--ui-bg);
+    color: var(--ui-text);
     height: 64px;
+    border-radius: var(--border-radius);
 
     cursor: pointer;
     user-select: none;
@@ -24,8 +25,8 @@
     left: 0;
     right: 0;
 
-    background: #111;
-    border: 1px solid #333;
+    background: var(--ui-bg);
+    border: 1px solid var(--ui-muted);
     max-height: 240px;
     overflow-y: auto;
     z-index: 1000;
@@ -41,11 +42,11 @@
 }
 
 .ui-dropdown-item:hover {
-    background: #222;
+    background: var(--ui-muted);
 }
 
 .ui-dropdown-item.active {
-    background: #333;
+    background: var(--ui-muted);
 }
 
 .ui-dropdown-image {

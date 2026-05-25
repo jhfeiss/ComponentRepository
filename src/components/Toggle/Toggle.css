@@ -1,0 +1,76 @@
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ui-text, #eaeaea);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide native checkbox */
+.toggle input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 42px;
+    height: 24px;
+
+    background: #2a2a2a;
+    border-radius: 999px;
+
+    position: relative;
+    outline: none;
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Knob */
+.toggle input::after {
+    content: "";
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Checked state */
+.toggle input:checked {
+    background: var(--ui-primary, #4f46e5);
+    /* modern indigo */
+    /* border-color: rgba(79, 70, 229, 0.5); */
+}
+
+.toggle input:checked::after {
+    left: 21px;
+}
+
+/* Hover effect */
+.toggle input:hover {
+    filter: brightness(1.1);
+}
+
+/* Focus accessibility */
+.toggle input:focus-visible {
+    background: var(--ui-primary, #4f46e5);
+    outline-offset: 2px;
+}
+
+/* Disabled support (optional future-proofing) */
+.toggle input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

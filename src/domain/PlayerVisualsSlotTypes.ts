@@ -40,4 +40,9 @@ export enum SlotType {
 	RightSpat = "RightSpat",
 
 	BackPlate = "BackPlate",
+
+	LeftArmTattoo = "LeftArmTattoo",
+	RightArmTattoo = "RightArmTattoo",
+
+	HelmetFlag = "HelmetFlag",
 }
