@@ -15,3 +15,14 @@ export const getTeamPrimaryColor = (id: number) => {
 	if (!team) return "transparent";
 	return `rgb(${team.TEAM_BACKGROUNDCOLORR},${team.TEAM_BACKGROUNDCOLORG},${team.TEAM_BACKGROUNDCOLORB})`;
 };
+
+export const getCollegeDropdownOptions = () => {
+	return teams
+		.filter((team) => team.COLLEGE_ID !== -1)
+		.map((team) => ({
+			label: team.Name,
+			value: team.COLLEGE_ID.toString(),
+			image: team.Name,
+			labelShort: team.ShortName,
+		}));
+};

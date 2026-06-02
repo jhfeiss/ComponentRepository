@@ -76,6 +76,10 @@
     margin-left: 6px;
 }
 
+.ui-input-icon.open {
+    color: var(--ui-primary);
+}
+
 .ui-input::-webkit-outer-spin-button,
 .ui-input::-webkit-inner-spin-button {
     -webkit-appearance: none;

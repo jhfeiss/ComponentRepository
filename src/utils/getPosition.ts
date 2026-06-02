@@ -24,3 +24,10 @@ export const POSITION_LIST: string[] = [
 ];
 
 export const getPosition = (id: number) => POSITION_LIST[id];
+
+export const getPositionOptions = () => {
+	return POSITION_LIST.map((position, index) => ({
+		label: position,
+		value: index.toString(),
+	}));
+};

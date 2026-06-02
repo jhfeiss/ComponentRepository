@@ -1,5 +1,7 @@
 import { Cloudinary } from "@cloudinary/url-gen";
 import "./CloudinaryImage.css";
+import { useEffect, useState } from "react";
+import { defaultImage } from "@cloudinary/url-gen/actions/delivery";
 
 const cld = new Cloudinary({
 	cloud: {
@@ -20,6 +22,7 @@ type CloudinaryImageProps = {
 	folderName: keyof typeof folderNames;
 	fileName: string;
 	className?: string;
+	defaultImage?: string;
 };
 
 const normalize = (value: string) =>
@@ -29,14 +32,22 @@ export const CloudinaryImage = ({
 	folderName,
 	fileName,
 	className,
+	defaultImage = "default",
 }: CloudinaryImageProps) => {
 	const publicId = `${folderNames[folderName]}/${normalize(fileName)}`;
 
 	const image = cld.image(publicId);
+	const [src, setSrc] = useState(image.toURL());
+	useEffect(() => {
+		setSrc(cld.image(publicId).toURL());
+	}, [publicId]);
 
 	return (
 		<img
-			src={image.toURL()}
+			src={src}
+			onError={() => {
+				setSrc(cld.image(`${folderNames[folderName]}/${defaultImage}`).toURL());
+			}}
 			className={className}
 		/>
 	);
