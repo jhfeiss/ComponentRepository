@@ -184,6 +184,7 @@ export function generateRatingsForArchetype(
 	 * Optional metadata for debugging/testing
 	 */
 	(prospect as any).__generationData = {
+		...(prospect as any).__generationData,
 		draftValue,
 		qualityFactor,
 		playerOutcome,
@@ -193,7 +194,7 @@ export function generateRatingsForArchetype(
 	return prospect;
 }
 
-const calculateDevTrait = (prospect: MaddenPlayer): number => {
+export const calculateDevTrait = (prospect: MaddenPlayer): number => {
 	const { overall, draftPick, draftRound } = prospect;
 
 	const pickNumber = (draftRound - 1) * 32 + draftPick;

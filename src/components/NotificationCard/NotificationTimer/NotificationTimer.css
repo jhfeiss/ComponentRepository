@@ -1,0 +1,24 @@
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.notification-timer {
+    flex-shrink: 0;
+}
+
+.notification-timer-progress {
+    animation: countdown var(--duration) linear forwards;
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: var(--circumference);
+    }
+}

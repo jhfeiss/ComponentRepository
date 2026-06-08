@@ -23,7 +23,7 @@ export const ratings: string[] = [
 	"awareness",
 	"acceleration",
 	"agility",
-	"archetype",
+	// "archetype",
 	"ballCarrierVision",
 	"blockShedding",
 	"breakSack",
@@ -201,7 +201,7 @@ export const qb_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -280,7 +280,7 @@ export const rb_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -359,7 +359,7 @@ export const wr_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -438,7 +438,7 @@ export const te_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -515,7 +515,7 @@ export const ol_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -592,7 +592,7 @@ export const f7_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -670,7 +670,7 @@ export const db_ratings: string[] = [
 	"kickAccuracy",
 	"kickPower",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",
@@ -746,7 +746,7 @@ export const kp_ratings: string[] = [
 	"playAction",
 	"throwOnTheRun",
 
-	"archetype",
+	// "archetype",
 	// "unk3",
 	// "unk4",
 	// "unk5",

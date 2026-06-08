@@ -1,0 +1,222 @@
+{
+	"firstName": "John",
+	"lastName": "Doe",
+	"age": 21,
+	"heightInches": 70,
+	"weight": 200,
+	"position": 0,
+	"overall": 0,
+	"draftRound": 63,
+	"draftPick": 400,
+	"speed": 0,
+	"strength": 0,
+	"throwPower": 0,
+	"throwAccuracyDeep": 0,
+	"throwAccuracyMid": 0,
+	"throwAccuracyShort": 0,
+	"throwOnTheRun": 0,
+	"awareness": 0,
+	"acceleration": 0,
+	"agility": 0,
+	"archetype": 0,
+	"assetName": "JohnDoe_Asset",
+	"ballCarrierVision": 0,
+	"birthDate": 0,
+	"blockShedding": 0,
+	"breakSack": 0,
+	"breakTackle": 0,
+	"carrying": 0,
+	"catchInTraffic": 0,
+	"catching": 0,
+	"changeOfDirection": 0,
+	"college": 0,
+	"commentaryId": 0,
+	"deepRouteRunning": 0,
+	"devTrait": 0,
+	"finesseMoves": 0,
+	"genericHead": 0,
+	"handedness": 0,
+	"hitPower": 0,
+	"homeState": 0,
+	"homeTown": "Smalltown",
+	"impactBlocking": 0,
+	"injury": 0,
+	"jerseyNum": 0,
+	"jukeMove": 0,
+	"jumping": 0,
+	"kickAccuracy": 0,
+	"kickPower": 0,
+	"kickReturn": 0,
+	"leadBlock": 0,
+	"manCoverage": 0,
+	"zoneCoverage": 0,
+	"mediumRouteRunning": 0,
+	"morale": 0,
+	"passBlock": 0,
+	"passBlockFinesse": 0,
+	"passBlockPower": 0,
+	"personality": 0,
+	"playAction": 0,
+	"playRecognition": 0,
+	"portraitId": 0,
+	"powerMoves": 0,
+	"pressCoverage": 0,
+	"pursuit": 0,
+	"qbStance": 0,
+	"qbStyle": 0,
+	"release": 0,
+	"runBlock": 0,
+	"runBlockFinesse": 0,
+	"runBlockPower": 0,
+	"runningStyle": 0,
+	"shortRouteRunning": 0,
+	"spectacularCatch": 0,
+	"spinMove": 0,
+	"stamina": 0,
+	"stiffArm": 0,
+	"tackle": 0,
+	"throwUnderPressure": 0,
+	"toughness": 0,
+	"traitAggressiveCatch": 0,
+	"traitBigHitter": 0,
+	"traitClutch": 0,
+	"traitCoverBall": 0,
+	"traitDeepBall": 0,
+	"traitDlBullRush": 0,
+	"traitDlSpinMove": 0,
+	"traitDlSwimMove": 0,
+	"traitDropsOpen": 0,
+	"traitFightForYards": 0,
+	"traitHighMotor": 0,
+	"traitLbStyle": 0,
+	"traitPenalty": 0,
+	"traitPlayBall": 0,
+	"traitPossessionCatch": 0,
+	"traitPredictability": 0,
+	"traitPumpFake": 0,
+	"traitRunAfterCatch": 0,
+	"traitSensePressure": 0,
+	"traitSidelineCatch": 0,
+	"traitStripBall": 0,
+	"traitTackleLow": 0,
+	"traitTendency": 0,
+	"traitThrowAway": 0,
+	"traitTightSpiral": 0,
+	"traitUnk1": 0,
+	"traitUnk2": 0,
+	"trucking": 0,
+	"unk3": 0,
+	"unk4": 0,
+	"unk5": 0,
+	"unk6": 0,
+	"unk8": 0,
+	"unkByte2": 0,
+	"visMoveType": 0,
+	"visuals": {
+		"bodyType": "standard",
+		"genericHeadName": "",
+		"genericHead": 0,
+		"loadouts": [
+			{
+				"loadoutCategory": "Base",
+				"loadoutElements": [
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "ArmSize"
+					},
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "CalfBlend"
+					},
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "Chest"
+					},
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "Glute"
+					},
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "Gut"
+					},
+					{
+						"blends": [{ "barycentricBlend": 1.0, "baseBlend": 1.0 }],
+						"slotType": "Thighs"
+					}
+				]
+			},
+			{
+				"loadoutType": "PlayerOnField",
+				"loadoutElements": [
+					{
+						"itemAssetName": "G_ArmTape_Short_TeamColor",
+						"slotType": "LeftArm"
+					},
+					{ "itemAssetName": "ArmSleeve_None", "slotType": "RightArm" },
+					{ "itemAssetName": "ElbowGear_None", "slotType": "LeftElbowGear" },
+					{ "itemAssetName": "ElbowGear_None", "slotType": "RightElbowGear" },
+					{ "itemAssetName": "GearHand_None", "slotType": "LeftHandgear" },
+					{ "itemAssetName": "GearHand_None", "slotType": "RightHandgear" },
+					{ "itemAssetName": "Handwarmer_Standard", "slotType": "HandWarmer" },
+					{
+						"itemAssetName": "GearFaceMask_Speedflex_2_Bar_WR",
+						"slotType": "Facemask"
+					},
+					{
+						"itemAssetName": "GearHelmet_Speed_Flex",
+						"slotType": "GearHelmet"
+					},
+					{ "itemAssetName": "FaceMarks_EyePaint2", "slotType": "FacePaint" },
+					{
+						"itemAssetName": "GearVisor_visorOakley_Prizm",
+						"slotType": "Visor"
+					},
+					{
+						"itemAssetName": "Gear_JerseyStyle_SleeveTight",
+						"slotType": "JerseyStyle"
+					},
+					{ "itemAssetName": "GearMouthpiece_None", "slotType": "Mouthpiece" },
+					{ "itemAssetName": "GearNeckpad_None", "slotType": "Neckpad" },
+					{
+						"itemAssetName": "GearFootwear_shoe_mid_AdidasAdizeroPrimeKnit",
+						"slotType": "LeftShoe"
+					},
+					{
+						"itemAssetName": "GearFootwear_shoe_mid_AdidasAdizeroPrimeKnit",
+						"slotType": "RightShoe"
+					},
+					{ "itemAssetName": "Gear_Socks_Low", "slotType": "GearSocks" },
+					{
+						"itemAssetName": "GearSpats_spatThin_White",
+						"slotType": "LeftSpat"
+					},
+					{
+						"itemAssetName": "GearSpats_spatThin_White",
+						"slotType": "RightSpat"
+					},
+					{ "itemAssetName": "Towel_East", "slotType": "Towel" },
+					{ "itemAssetName": "GearWrist_None", "slotType": "LeftWristGear" },
+					{
+						"itemAssetName": "GearWrist_wristBandDouble_White",
+						"slotType": "RightWristGear"
+					},
+					{ "itemAssetName": "ThighPad_Regular", "slotType": "ThighGear" },
+					{ "itemAssetName": "KneePad_Regular", "slotType": "KneeItem" },
+					{
+						"blends": [{ "barycentricBlend": 0.0, "baseBlend": 0.0 }],
+						"itemAssetName": "Flakjacket_On",
+						"slotType": "FlakJacket"
+					},
+					{
+						"blends": [{ "barycentricBlend": 0.0, "baseBlend": 0.0 }],
+						"itemAssetName": "Backplate_Standard",
+						"slotType": "Backplate"
+					},
+					{ "itemAssetName": "Medium_Pads", "slotType": "Shoulderpads" }
+				]
+			}
+		],
+		"skinTone": 1
+	}
+}
