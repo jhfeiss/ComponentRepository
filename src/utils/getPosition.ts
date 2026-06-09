@@ -24,6 +24,8 @@ export const POSITION_LIST: string[] = [
 ];
 
 export const getPosition = (id: number) => POSITION_LIST[id];
+export const getPositionId = (position: string) =>
+	POSITION_LIST.indexOf(position);
 
 export const getPositionOptions = () => {
 	return POSITION_LIST.map((position, index) => ({

@@ -6,3 +6,9 @@ export const getStateOptions = () => {
 		value: key,
 	}));
 };
+
+export const getStateId = (stateName: string): number | undefined => {
+	const entry = Object.entries(STATES).find(([_, name]) => name === stateName);
+
+	return entry ? Number(entry[0]) : undefined;
+};

@@ -26,7 +26,7 @@ type CloudinaryImageProps = {
 };
 
 const normalize = (value: string) =>
-	value.replaceAll(" ", "_").replaceAll("&", "_");
+	value ? value.replaceAll(" ", "_").replaceAll("&", "_") : "";
 
 export const CloudinaryImage = ({
 	folderName,
